@@ -43,7 +43,7 @@ int main(void)
 
 	int testcase[3] = {0, 321, 1};
 	printf("\n---test index---\n");
-	for(int i = 0; i < sizeof(testcase) / sizeof(int); i++)
+	for(size_t i = 0; i < sizeof(testcase) / sizeof(int); i++)
 		printf("%d is %d index\n", testcase[i], list_index(arr, testcase[i]));
 
 	printf("\n---test printNthFromLast---\n");

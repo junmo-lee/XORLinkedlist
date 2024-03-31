@@ -231,7 +231,7 @@ int list_index(t_xorlist* list, int data)
 {
 	t_node* cur = list->head;
 	t_node* prev = NULL;
-	t_node* next;
+	t_node* next = NULL;
 	int cnt = 0;
 
 	while (cur != NULL && cnt < list->size)
@@ -284,7 +284,7 @@ int list_clear(t_xorlist* list)
 		return (-1);
 	t_node* cur = list->head;
 	t_node* prev = NULL;
-	t_node* next;
+	t_node* next = NULL;
 	int		cnt = 0;
 
 	while (cnt < list->size)
